@@ -1,0 +1,30 @@
+<!-- media query 이해 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>media query</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+      @media (max-width: 600px) {
+        body {
+          background-color: green;
+        }
+      }
+      @media (max-width: 500px) {
+        body {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>0~500 : red</li>
+      <li>501~600 : green</li>
+      <li>601~ : blue</li>
+    </ul>
+  </body>
+</html>
