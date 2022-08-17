@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        border-bottom: 1px solid black;
+      }
+      #container {
+        width: 600px;
+        border: 1px solid black;
+        margin:auto; /* 좌우 대칭 */
+      }
+      nav, article{
+        float:left;
+      }
+      nav{
+        width: 150px;
+        border-right: 1px solid black;;
+      }
+      article{
+        width:350px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        margin-left:-1px;
+        margin-right:-1px;
+      }
+      aside{
+        float:left;
+        width:100px;
+        border-left: 1px solid black;
+      }
+      footer{
+        clear:both;
+        border-top: 1px solid black;
+        text-align: center;
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>제목</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </nav>
+      <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolor nihil
+        eligendi. Mollitia neque ut deleniti earum. Reiciendis natus omnis a
+        alias explicabo. Recusandae accus amus, quidem amet debitis optio
+        veniam?
+      </article>
+      <aside> AD </aside>
+      <footer>
+        <a href="https://www.google.com">구글 홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>
