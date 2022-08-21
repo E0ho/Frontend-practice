@@ -1,0 +1,43 @@
+<!-- position 속성 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>postion</title>
+    <style>
+        div{
+            border:1px solid black;
+        }
+        #A_a{
+            position: static;;
+        }
+        #A_b{
+            position: relative;
+            left: 100px;
+            top:100px;
+            background-color: aqua;
+        }
+        #A_b_a{
+            position: absolute;
+            left: 100px;
+            top:100px;
+            background-color: aqua;
+        }
+        #B{
+            position: fixed;
+            left: 100px;
+            top:100px;
+            background-color: aqua;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="A">1</div>
+        <div id="A_a">2</div>
+        <div id="A_b">relative (relative는 dsiplay:block)
+            <div id="A_b_a">relative + absolute  (absolute는 display: inline) </div>
+        </div>
+    <div id="B">fixed (fixed는 display: inline)</div>
+  </body>
+</html>
