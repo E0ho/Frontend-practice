@@ -1,0 +1,107 @@
+<!-- 클릭시 알림 -->
+<input type="button" value="버튼" onclick="alert('hello world')" />
+
+<!-- 
+    <웹 브라우저>
+    1. 웹브라우저를 제어하기 위한 언어 (클라이언트 사이드 스크립트)
+    <탈 웹브라우저>
+    2. node.js -> 웹서버 동작 (서버 사이드 스크립트) 
+    3. google apps script -> 스프레드 시트?
+
+
+
+    웹 브라우저 -> 요청 (웹) -> 웹 서버 -> 응답 (웹) -> 웹브라우저 
+
+    웹 서버 기술 :java, php, python, node.js(java script)
+
+
+
+    문법 ->  ~~('Hello World');
+    환경에 따라 ~~가 변한다. 
+    (ex) alret(웹 브라우저), write(node.js), msgBox(spreadsheet)
+
+
+    웹브라우저 -> html위에서 script작성 실행
+
+
+    웹브라우저 개발자도구 console 활용하여 미리 출력값 확인가능
+    console.log()
+
+
+
+    <정규 표현식 Regular expression> java, js ...등등 에서 사용된는 일종에 언어
+
+
+    <js 에서 ㅈㄱㅍㅎㅅ 사용하는 방법>
+    1.compile -> pattern 을 찿는단계
+    2.실행 -> 대상에 대한 작업을 하는것
+
+    1. 작업을 할 대상을 찿는다
+    2. 대상이 작업을 실행
+
+
+    작업할 대상을 pattern변수에 저장하는 방법 2가지
+
+    1 정규표현식 리터럴
+    var str = "정보"
+    var pattern = /(찿고자하는 정보)/;
+
+    2. 정규표현식 객체 생성자
+    var pattern = new RegExp('찿고자하는 정보')   //Regular expression(정규 표현식) 객체 생성
+
+        찿고자하는 정보를 pattern이라는 변수에 저장
+        pattern이라는 변수가 가르키는것은 우리가 찿고자하는 정보
+
+
+    정규표현식을 가지고 하는 주요 작업
+    
+    1. 추출 : 특정 정보를 추출할때
+    2. 검사(test) : 특정 정보가 있는지 검사
+    3. 치환 : 찿아낸 정보를 다른 정보로 치환하는것
+
+        // RegExp 정규표현식 객체를 의미
+        Pattern 에 들어있는 값(의지) = 정규표현식 객체
+        pattern : 특정 정보를 찿으려는 의지
+
+    RegExp.exec() : 필요한 정보를 추출 (배열)
+    pattern.exec('찿으려는 정보가 들어있는 정보들');
+    // pattern이 담고 있는 의지 실행값 출력
+
+    pattern 메소드 실행
+    pattern.exec()
+    pattern.test()
+    RegExp.test() : 실행 후 true/false 반환 (필요한 정보 존재 유무 검사)
+
+
+    문자열 메소드 실행
+    string.match(pattern)
+    string.replace(pattern, '치환값')
+
+    옵션
+    i : 대소문자 구분 x pattern값 저장할때 /a/i붙이기
+
+    g : 텍스트 전체에서 모두 찿기
+    ig 동시에 사용도 가능
+
+    () : group
+    \w : 문자 (a~z, 0~9)
+    + : 하나 이상
+    \s : space(공백)
+
+
+
+
+-->
+
+<!-- 
+    js 문법 -> 명령어();
+
+
+    <명령어>
+    alert(); : 알림
+    prompt(); : 입력을 받는 알림창
+    ---alert,prompt 실습
+    document.writ() : 웹 페이지에 출력하는 명령어 >>>
+
+
+-->

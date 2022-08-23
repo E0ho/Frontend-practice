@@ -1,0 +1,24 @@
+<!-- alert, prompt, document.write -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var name = prompt("이름을 입력하세요");
+            if(name == "이영호"){
+                var age = prompt("나이를 입력하세요");
+                if(age==24){
+                    alert('확인되었습니다.');
+                    document.write('이영호(24)의 홈페이지 입니다.')
+                }else{
+                    alert('확인을 실패했습니다.');
+                }
+            }else{
+                alert('확인을 실패했습니다.');
+            }
+            
+        </script>
+    </body>
+</html>

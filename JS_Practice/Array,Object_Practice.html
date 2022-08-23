@@ -1,0 +1,52 @@
+<!-- 배열, 객체 출력 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+
+    <ul>
+        <script>
+            //배열 선언 및 호출 방법 1
+            var arr = ['html', 'css', 'js'];
+            for(i=0; i<arr.length; i++){
+                document.write("<li> index: "+ i + "   values: "+ arr[i] + "</li>");
+            }
+            document.write("<br>");
+    
+            //배열 선언 및 호출 방법 1
+            var arr2 = ['html2', 'css2', 'js2', 24];
+            for(var index in arr2){
+                document.write("<li> index: "+ index + "   value: "+arr2[index]+"</li>");
+            }
+
+            document.write("<br>");
+
+            //객체 선언 및 호출 방법 1
+            var obj = new Object();
+            obj['name1'] = "html3";
+            obj['name2'] = "css3";
+            obj['name3'] = "js3";
+            obj['age'] = 30;
+            for(var key in obj){
+                document.write("<li> key: "+key+" value: "+ obj[key] +"</li>");
+            }
+
+            document.write("<br>");
+
+            //객체 (객체, 함수)
+            var grades = {
+              'list' : {'Lee' : 10 , 'Kim' : 20},
+              'fun' : function(){
+                console.log(this.list);
+              }
+            }
+            //this : 함수가 속해있는 객체를 가르키는 변수
+            //console.log 개발자도구 console로 출력
+            grades['fun']();
+        </script>
+    </ul>
+    
+  </body>
+</html>
