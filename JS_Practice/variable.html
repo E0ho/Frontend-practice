@@ -1,0 +1,28 @@
+<!-- 헷갈릴 수 있는 변수 개념 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+      var vscope = "global";
+      function f() {
+        var vscope = "local";
+        vscope = "local";
+      }
+      f();
+      alert(vscope); // 출력:global (지역변수 선언으로 인해 지역변수 값이 변경되었다.)
+      //전역변수에는 영향 x
+    </script>
+
+    <script>
+      var vscope = "global";
+      function f() {
+        vscope = "local";
+      }
+      f();
+      alert(vscope); // 출력:local (지역변수 선언 x) //전역변수 수정
+    </script>
+  </body>
+</html>
