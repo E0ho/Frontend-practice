@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>중간고사</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      header {
+        font-weight: bold;
+      }
+      header,
+      nav {
+        width: 640px;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .list {
+        flex-basis: 160px;
+      }
+      .list:hover {
+        background-color: aqua;
+      }
+      img {
+        width: 100px;
+        margin-top: 20px;
+        border-radius: 15%;
+      }
+      img:hover {
+        transform: scale(1.3);
+        box-shadow: 5px 5px 5px black;
+      }
+      #hufs {
+        border-radius: 50%;
+      }
+      #star,
+      #water {
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body style="width: 640px">
+    <div>
+      <header>
+        <div style="font-size: 35px">링크 페이지</div>
+        <div style="font-size: 25px">201802669 이영호</div>
+      </header>
+      <nav>
+        <div class="list">
+          <a href="https://www.hufs.ac.kr/" target="screen">
+            <img src="media/hufs logo.jpg" id="hufs" alt="한국외국어대학교 이미지" />
+            <br /><br />한국외국어대학교
+          </a>
+        </div>
+        <div class="list">
+          <a href="https://www.youtube.com/embed/lPYxbbKYYmE" target="screen">
+            <img src="media/minari.jpg" alt="미나리 이미지" />
+            <br /><br />미나리
+          </a>
+        </div>
+        <div class="list" id="star">
+          <a href="media/starry night.jpg" target="screen">
+            <img src="media/starry night.jpg" alt="별이 빛나는 밤 이미지" />
+            <br /><br />별이 빛나는 밤
+          </a>
+        </div>
+        <div class="list" id="water">
+          <a href="media/waterlilies.jpg" target="screen">
+            <img src="media/waterlilies.jpg" alt="수련 이미지" />
+            <br /><br />수련
+          </a>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <iframe name="screen" width="640" height="480"></iframe>
+  </body>
+</html>

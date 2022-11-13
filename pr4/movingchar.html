@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>움직이는 글자</title>
+		<style>
+			@keyframes size{
+				0%{font-size:100%;}
+				50%{font-size:500%;}
+				100%{font-size:100%;}
+			}
+			@keyframes transitionLeft{
+				0%{right:0px;}
+				50%{right:50%}
+				100%{right:0px;}
+			}
+			@keyframes transitionRight{
+				0%{left:0px;}
+				50%{left:50%}
+				100%{left:0px;}
+			}
+			@keyframes transitionTop{
+				0%{bottom:0px;}
+				50%{bottom:50%}
+				100%{bottom:0px;}
+			}
+			@keyframes transitionBottom{
+				0%{top:0px;}
+				50%{top:50%}
+				100%{top:0px;}
+			}
+			div{
+				display:inline-block;
+				font-weight:bold;
+				border-radius:50px;
+				color:white;
+				transition:transform 1s;
+				padding:10px;
+				
+			}
+			div:hover{
+				transform:rotate(180deg);
+			}
+			#www{
+				background-color:black;
+				position:fixed;
+				top:0px;
+				animation-name:size, transitionRight;
+				animation-duration:10s;
+				animation-iteration-count: infinite;
+			}
+			
+			#html{
+				background-color:red;
+				position:fixed;
+				right:0px;
+				animation-name:size,transitionBottom;
+				animation-duration:10s;
+				animation-iteration-count: infinite;
+			}
+			#js{
+				background-color:blue;
+				position:fixed;
+				left:0px;
+				animation-name:size,transitionTop;
+				animation-duration:10s;
+				animation-iteration-count: infinite;
+			}
+			#css{
+				background-color:green;
+				position:fixed;
+				bottom:0px;
+				animation-name:size,transitionLeft;
+				animation-duration:10s;
+				animation-iteration-count: infinite;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="www">WWW</div>
+		<div id="html">HTML5</div>
+		<div id="js">JavaScript</div>
+		<div id="css">CSS3</div>
+	</body>
+</html>
